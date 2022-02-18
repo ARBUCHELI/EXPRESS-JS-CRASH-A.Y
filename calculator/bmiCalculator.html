@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- Here the deal is that we are going to send this entire html file when the browser tries to access the home route. -->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+    <h1>BMI Calculator</h1>
+        <!--Previously we were sending with the action method to the index.html but remember that we need to send to our server, for that reason we need to change 
+        the following line of code. 
+        <form action="index.html" method="post"> -->
+        <form action="/bmicalculator" method="post">
+             <input type="text" name="weight" placeholder="Weight">
+             <input type="text" name="height" placeholder="High">
+             <button type="submit" name="submit">Calculate BMI</button>
+        </form>
+
+    </body>
+</html>
